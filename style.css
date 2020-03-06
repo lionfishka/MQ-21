@@ -154,23 +154,42 @@ h2 {
     margin: 0;
 }
 
-.athlets_header {
+.athlets {
     position: relative;
+}
+
+.athlets_header {
     height: 306px;
 }
 
-.footballer_192 {
+.athlets:after {
+    content: "";
+    background-image: url("images/footballer_192.png");
+    background-repeat: no-repeat;
     position: absolute;
-    transform: translateX(25%);
+    top: 80px;
+    left: 70px;
+    bottom: 0;
+    right: 0;
+}
+
+.players {
+    position: relative;
 }
 
 .players_header {
-    position: relative;
     height: 302px;
 }
 
-.basketballer_302 {
+.players:after {
+    content: "";
+    background-image: url("images/basketballer_302.png");
+    background-repeat: no-repeat;
     position: absolute;
+    top: 80px;
+    left: 11px;
+    bottom: 0;
+    right: 0;
 }
 
 h3 {
@@ -497,10 +516,30 @@ footer:after {
     .athlets {
         display: flex;
         flex-direction: column;
+    }
 
+    .athlets_header, .players_header {
+        height: 203px;
+    }
+
+    .athlets:after {
+        content: "";
         background-image: url("images/footballer_497.png");
         background-repeat: no-repeat;
-        background-position: center left -180px;
+        position: absolute;
+        transform: translateX(-30%);
+        top: 94px;
+    }
+
+    .players:after {
+        content: "";
+        background-image: url("images/basketballer_436.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 94px;
+        right: 0;
+        left: 0;
+        bottom: 0;
     }
 
     h2 {
@@ -646,10 +685,24 @@ footer:after {
     .athlets {
         display: flex;
         flex-direction: column;
+    }
 
+    .athlets:after {
+        content: "";
         background-image: url("images/footballer_566.png");
         background-repeat: no-repeat;
-        background-position: center left 100px;
+        position: absolute;
+        top: 26px;
+        left: 15%;
+    }
+
+    .players:after {
+        content: "";
+        background-image: url("images/basketballer_991.png");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 26px;
+        right: 100px;
     }
 
     h2 {
@@ -679,7 +732,8 @@ footer:after {
     }
 
     .connection {
-        background-color: #fafafa;
+        background-color: #ffffff;
+        padding-top: 0;
         padding-bottom: 50px;
     }
 
